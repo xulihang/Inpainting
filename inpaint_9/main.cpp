@@ -276,12 +276,12 @@ int main(int argc, char *argv[])
 	output_str << ".png";
 
 	// save result
-#ifndef IPOL_DEMO
-	IOUtility::write_rgb_image(output_str.str(), IOUtility::lab_to_rgb(output));
-#else
+//#ifndef IPOL_DEMO
+	//IOUtility::write_rgb_image(output_str.str(), //IOUtility::lab_to_rgb(output));
+//#else
    // in the IPOL demo the output filename is fixed just output_name
 	IOUtility::write_rgb_image(output_name, IOUtility::lab_to_rgb(output));
-#endif
+//#endif
    
 	// save the output pyramid
 	if (!show_pyramid_file.empty()) {
